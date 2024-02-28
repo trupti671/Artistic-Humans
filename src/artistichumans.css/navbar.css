@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px 0;
+    gap: 10px;
+}
+
+.navHead h2{
+    font-weight: 400;
+}
+
+.navHead img{
+    width: 90px;
+    height: 90px;
+}
+
+.navTail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    width: 70%;
+    /* border: 1px solid #707070; */
+    margin: auto;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.nContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #707070;
+    /* padding: 0 20px; */
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    /* gap: 20px; */
+    transition: 0.1s ease-in-out;
+}
+
+.nContent a{
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 20px 20px;
+    transition: 0.1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+.nContent:hover a{
+    filter: blur(1.5px);
+}
+
+.nContent a:hover, .nInsta:hover {
+    background-color: #7070702f;
+    filter: blur(0px);
+}
+
+
+
+.vr{
+    height: 20px;
+    width: 1px;
+    background-color: #707070;
+}
+
+.nInsta{
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+}
+
+.nInsta img{
+    width: 30px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.ncBtn{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ncBtn button{
+    background-color: #AD0507;
+    border: 1px solid #707070;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.ncBtn button:hover{
+    background-color: #860002;
+}
+
+
+.nmenu{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+.nmenuContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

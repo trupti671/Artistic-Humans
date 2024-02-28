@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width:320px) and (max-width:550px){
+
+    .navTail{
+        flex-direction: column;
+        backdrop-filter: blur(0px);
+        /* margin-right: 0; */
+    justify-content: flex-start;
+    }
+
+    .nInsta img {
+        width: 25px;
+        height: 23px;
+    }
+
+    .nInsta {
+        padding: 9px;
+    }
+
+    .ncBtn button {
+        padding: 15px 15px;
+        font-size: 0.6rem;
+    }
+
+    .nContent a {
+        font-size: 0.6rem;
+        padding: 10px 15px;
+
+    }
+
+    .hmBubbles {
+        height: 400px;
+    }
+
+    .hMain {
+        height: 190px;
+            width: 90%;
+            left: 5%;
+            bottom: 15%;
+    }
+
+    .homeMain {
+        height: 100vh;
+    }
+
+    .navHead {
+        padding: 30px 0;
+    }
+
+
+    .hmBubbles .b1 {
+        position: absolute;
+        left: -50px;
+        top: 100px;
+    }
+
+    .hmBubbles .b2 {
+        position: absolute;
+        right: -50px;
+        bottom: 10px;
+    }
+
+    .hmBubbles {
+        height: 400px;
+    }
+
+    .hmBubbles .b {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navHead h2 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .navHead img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nmenu{
+        display: block;
+    }
+
+    .nc2{
+        flex-direction: column;
+        width: 150px;
+        background-color: #00000047;
+        position: absolute;
+        top: -5px;
+        /* left: 17px; */
+        z-index: 1;
+        /* left: -90px; */
+         width: 90px;
+         transition: 0.5s ease-in-out;
+    }
+
+
+    .vr {
+        height: 1px;
+    width: 80%;
+    background-color: #707070;
+    }
+
+
+
+}
+
+
+@media (min-width:550px) and (max-width:768px){
+
+    .navTail{
+        flex-direction: column;
+    }
+
+    .nInsta img {
+        width: 25px;
+        height: 23px;
+    }
+
+    .nInsta {
+        padding: 9px;
+    }
+
+    .ncBtn button {
+        padding: 15px 15px;
+        font-size: 0.6rem;
+    }
+
+    .nContent a {
+        font-size: 0.6rem;
+        padding: 15px 15px;
+    }
+
+    .hmBubbles {
+        height: 400px;
+    }
+
+    .hMain {
+        height: 350px;
+    }
+
+    .homeMain {
+        height: 125vh;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+    .homeMain {
+        height: 120vh;
+    }
+
+    .hMain{
+        height: 400px;
+    }
+
+    .hmBubbles{
+        height: 400px;
+    }
+
+    .nContent a {
+        font-size: 0.6rem;
+        padding: 20px 12px;
+    }
+
+    .ncBtn button {
+        padding: 20px 10px;
+        font-size: 0.6rem;
+    }
+
+    .nInsta img {
+        width: 27px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1440px){
+
+    .homeMain {
+        height: 140vh;
+    }
+
+    .nContent a{
+        font-size: 0.7rem;
+        /* padding: 30px 30px; */
+    }
+
+    .ncBtn button{
+        font-size: 0.7rem;
+        /* padding: 30px 30px; */
+    }
+
+
+
+}
+
+@media (min-width:1441px) and (max-width:2560px){
+    .navHead img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .navHead h2 {
+        font-size: 2rem;
+    }
+    
+    .hMain{
+        height: 900px;
+    }
+    
+    .hmBubbles {
+        width: 74%;
+        height: 1000px;
+        bottom: 3%;
+        left: 13%;
+    }
+
+    .nContent a{
+        font-size: 1.2rem;
+        padding: 30px 30px;
+    }
+
+    .ncBtn button{
+        font-size: 1.2rem;
+        padding: 30px 30px;
+    }
+
+    .nInsta{
+        padding: 20px;
+    }
+
+    .nInsta img {
+        width: 44px;
+        height: 40px;
+    }
+
+    .ncBtn{
+        gap: 25px;
+    }
+
+    .navTail{
+        gap: 35px;
+    }
+
+}

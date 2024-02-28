@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.introMain {
+  /* border: 1px solid black; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 590px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  /* background-color: rgb(58, 57, 57); */
+  background-color: rgb(58 57 57 / 39%);
+  backdrop-filter: blur(20px);
+}
+
+.closeImg {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.closeImg img {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.closeImg img:hover {
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.intro h2 {
+  /* border: 1px solid black;  */
+  width: -fit-content;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 7px;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.introImg {
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introImg img {
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.intro h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.intro p {
+  /* border: 1px solid black; */
+  /* width: max-content; */
+  border: none;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  border-left: 2px solid white;
+  font-size: 0.85rem;
+  line-height: 20px;
+}
+
+/* ...........................ABOUT...................... */
+
+.about {
+  width: 80%;
+  height: 80%;
+  /* padding: 40px; */
+  display: block;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 37px;
+}
+
+.aboutContent p {
+  border-left: none;
+}
+
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530px;
+  /* align-items: center; */
+}
+
+.aboutImg {
+  height: 375px;
+  width: 580px;
+}
+
+.aboutImg img {
+  width: 580px;
+  height: 375px;
+}
+
+.aboutRgt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ....................................WORK.................................... */
+
+.p {
+  display: flex;
+  justify-content: center;
+}
+
+.work p {
+  padding: 8px;
+}
+
+.workContent {
+  width: 100%;
+  gap: 3px;
+}
+
+.workLeft {
+  width: 50%;
+  height: 520px;
+}
+
+.workRgt {
+  width: 50%;
+  justify-content: end;
+}
+
+.workImg {
+  width: 560px;
+  height: 260px;
+}
+
+.workImg img {
+  width: 560px;
+  height: 260px;
+}
+
+/* ..................AM75.................. */
+
+.t75 .typing {
+  font-size: 2em;
+  color: #ffffff; /* Text color */
+  white-space: nowrap; /* Prevent text wrapping */
+  border: none;
+  border-right: 2px solid white;
+  width: max-content;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.am75 {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.am75Content p {
+  padding: 20px;
+}
+
+.checkout {
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+/* .............................CONTACT......................... */
+
+.contact {
+  width: 500px;
+  height: 400px;
+  justify-content: space-around;
+}
+
+.contact p {
+  border-left: none;
+  padding: 0;
+}
+
+.contactEP h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactEP img {
+  width: 20px;
+  height: 20px;
+}
+
+.cSocialMedia {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.csm {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* padding: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.csm img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.colorimg {
+  opacity: 0;
+}
+
+.csm:hover .colorimg {
+  opacity: 1;
+}
+
+/* .csm:hover {
+  background-color: black;
+} */
+
+/* .....................GALLERY...................... */
+
+.galleryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.galleryWindow {
+  width: 600px;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery {
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+
+.gallery h2 {
+  margin: auto;
+}
+
+.galleryImgs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* gap: 30px; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.galleryImgs img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+}
+
+.galleryBtns {
+  /* border: 1px solid black; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+}
+
+.galleryBtns img {
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  padding: 7px 8px;
+  padding-left: 6px;
+  cursor: pointer;
+  background: #0000004d;
+  transition: 0.2s ease-in;
+  box-shadow: 3px 3px 1px 0px black;
+}
+
+.galleryBtns img:hover {
+  background-color: black;
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+/* .............................SHOWCASE.......................... */
+
+.showcase {
+  gap: 30px;
+  width: 580px;
+  height: 550px;
+  justify-content: flex-start;
+}
+
+.showcase h2 {
+  margin: 0 auto;
+}
+
+/* ......................OUR PARTNERS.......................... */
+
+
+.am75 a{
+  text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.partners{
+  width: 900px;
+    height: 500px;
+}
+
+.partnersImg{
+  width: 900px;
+    height: 400px;
+}
+
+.partnersImg img{
+  width: 900px;
+    height: 400px;
+}
+
