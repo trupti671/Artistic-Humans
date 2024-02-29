@@ -12,9 +12,9 @@ function About() {
           <Link to={'/'} className="closeImg">
             <img src={close} alt="" />
           </Link>
+              <h2>ABOUT</h2>
           <div className="aboutContent">
             <div className="aboutLeft">
-              <h2>ABOUT</h2>
               <div className="introImg aboutImg">
                 <img src={about} alt="" />
               </div>

@@ -12,9 +12,9 @@ function Work() {
     <div className="introMain">
     <div className="intro about work">
         <Link to={'/'} className="closeImg"><img src={close} alt="" /></Link>
+            <h2>WORK</h2>
         <div className="aboutContent workContent">
         <div className="aboutLeft workLeft">
-            <h2>WORK</h2>
         <div className="introImg workImg"><img src={work1} alt="" /></div>
         <div className="q1">
         <h3>OUR VARIOUS WINGS OF OPERATIONS:</h3>

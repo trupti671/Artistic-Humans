@@ -13,9 +13,11 @@ import Work from './Components/Work';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import '../src/artistichumans.css/ahmq.css';
 import OurPlays from './Components/OurPlays';
+import 'google-fonts';
 
 function App() {
   return (
+    
     // <>
     // <Navbar/>
     // <Home/>
