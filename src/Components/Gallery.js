@@ -39,7 +39,7 @@ function Gallery() {
     setN(n === 1 ? 1 : n - 1);
 
     setSlide({
-      transform: `translateX(${trs}px)`,
+      transform: `translateX(${trs}px)`
     });
   };
 
@@ -59,7 +59,7 @@ function Gallery() {
         <Link to={'/'} className="closeImg"><img src={close} alt="" /></Link>
         <h2>GALLERY</h2>
         <div className="galleryContent">
-        <div className="galleryBtns">
+          <div className="galleryBtns">
             <img className="leftarrow" onClick={left} src={leftarrow} alt="" />
             <img className="rightarrow" onClick={right}  src={rightarrow} alt="" />
           </div>

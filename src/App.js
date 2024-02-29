@@ -12,6 +12,7 @@ import Showcase from './Components/Showcase';
 import Work from './Components/Work';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import '../src/artistichumans.css/ahmq.css';
+import OurPlays from './Components/OurPlays';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path='gallery' element={<Gallery/>}/>
             <Route path='showcase' element={<Showcase/>}/>
             <Route path='contact' element={<Contact/>}/>
+            <Route path='ourplays' element={<OurPlays/>}/>
             <Route path='ourPartners' element={<OurPartners/>}/>
         </Route>
       </Routes>

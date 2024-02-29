@@ -1,46 +1,64 @@
-import React, { useState } from 'react'
-import '../artistichumans.css/navbar.css'
-import artisticlogo from '../Images/artisticlogo.png'
-import instawhite from '../Images/instawhite.png'
-import { Link } from 'react-router-dom'
-import menuicon from '../Images/menuicon.png'
+import React, { useState, useEffect } from 'react';
+import '../artistichumans.css/navbar.css';
+import artisticlogo from '../Images/artisticlogo.png';
+import instawhite from '../Images/instawhite.png';
+import { Link } from 'react-router-dom';
+import menuicon from '../Images/menuicon.png';
 
 function Navbar() {
   const [navStyle, setNavStyle] = useState({
-    transform: 'translateX(-340px)'
-  })
+    transform: 'translateX(0)'
+  });
   const [menu, setMenu] = useState(true);
   const [nvs, setNvs] = useState({
-    marginRight: "auto"
-  })
+    marginRight: 'auto'
+  });
 
-  const handleClick = ()=>{
-    if(menu)
-    {
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setNavStyle({
+          transform: 'translateX(0px)'
+        });
+      }
+    };
+  
+    // Call handleResize on component mount
+    handleResize();
+  
+    // Add event listener to handle window resize
+    window.addEventListener('resize', handleResize);
+  
+    // Remove event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleClick = () => {
+    if (menu) {
       setNavStyle({
         transform: 'translateX(-155px)'
-      })
+      });
       setNvs({
-        marginRight: "0"
-      })
-      setMenu(false)
-    }else{
+        marginRight: '0'
+      });
+      setMenu(false);
+    } else {
       setNavStyle({
         transform: 'translateX(-340px)'
-      })
+      });
       setNvs({
-        marginRight: "auto"
-      })
-      setMenu(true)
+        marginRight: 'auto'
+      });
+      setMenu(true);
     }
+  };
 
-  }
   return (
     <>
-    <div className="navbarMain">
+      <div className="navbarMain">
         <div className="navHead">
-            <img src={artisticlogo} alt="" />
-            <h2>“Empowering Art,<br/> Creating Communities”</h2>
+          <img src={artisticlogo} alt="" />
+          <h2>“Empowering Art,<br/> Creating Communities”</h2>
         </div>
         <div className="navTail" style={nvs}>
           <div className="ncBtn">
@@ -61,19 +79,19 @@ function Navbar() {
             <Link to={'/showcase'}>SHOWCASE</Link>
           </div>
          
-            <div className="nmenuContent">
+          <div className="nmenuContent">
             <img className='nmenu' src={menuicon} alt="menuicon" onClick={handleClick}/>
           
-          <div className="nContent">
-            
-            <Link>OUR PLAYS ** NOW PLAYING </Link>
-          </div>
+            <div className="nContent">
+              <Link to={'/ourplays'}>OUR PLAYS</Link>
+              <div className="vr"></div>
+              <Link>NOW PLAYING</Link>
             </div>
+          </div>
         </div>
-
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
