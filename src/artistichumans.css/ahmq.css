@@ -43,9 +43,9 @@
             bottom: 15%;
     }
 
-    .homeMain {
+    /* .homeMain {
         height: 100vh;
-    }
+    } */
 
     .navHead {
         padding: 30px 0;
@@ -227,8 +227,76 @@
         height: 350px;
     }
 
-    .homeMain {
-        height: 125vh;
+    /* .homeMain {
+        height: 105vh;
+    } */
+
+    .intro {
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .closeImg img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .intro h2 {
+        letter-spacing: 5px;
+        text-underline-offset: 5px;
+        font-size: 1.4rem;
+    }
+
+    .introImg {
+        width: 400px;
+        height: 200px;
+    }
+
+    .introImg img {
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .intro h3 {
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    /* ...................about.................... */
+
+
+    .introMain {
+        height: max-content;
+    }
+
+    .aboutLeft {
+        height: 350px;
+        /* align-items: center; */
+    }
+
+    .aboutContent {
+        display: block;
+    }
+
+    .about{
+        height: max-content;
+        margin: 10px 0;
+    }
+
+    /* .....................work.......................... */
+
+    .aboutLeft {
+        height: 600px;
+        /* align-items: center; */
     }
 
     .intro {
@@ -303,9 +371,9 @@
 
 @media (min-width:769px) and (max-width:1024px){
 
-    .homeMain {
-        height: 120vh;
-    }
+    /* .homeMain {
+        height: 100vh;
+    } */
 
     .hMain{
         height: 400px;
@@ -422,9 +490,9 @@
 
 @media (min-width:1025px) and (max-width:1440px){
 
-    .homeMain {
-        height: 140vh;
-    }
+    /* .homeMain {
+        height: 115vh;
+    } */
 
     .nContent a{
         font-size: 0.7rem;
@@ -436,80 +504,13 @@
         /* padding: 30px 30px; */
     }
 
-    /* .................intro..................... */
-
-    .intro {
-        width: 400px;
-        height: 500px;
-        border-radius: 15px;
-        padding: 20px;
-    }
-
-    .closeImg img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .intro h2 {
-        letter-spacing: 5px;
-        text-underline-offset: 5px;
-        font-size: 1.4rem;
-    }
-
-    .introImg {
-        width: 400px;
-        height: 200px;
-    }
-
-    .introImg img {
-        width: 400px;
-        height: 200px;
-        border-radius: 10px;
-    }
-
-    .intro h3 {
-        letter-spacing: 3px;
-        font-size: 1.2rem;
-    }
-
-    .intro p {
-        padding: 10px;
-        font-size: 0.8rem;
-        line-height: 20px;
-    }
-
-    /* .......................about....................... */
-
-    .about {
-        width: 900px;
-        height: 500px;
-        border-radius: 15px;
-        padding: 30px;
-    }
-
-    .aboutLeft {
-        height: 450px;
-        /* align-items: center; */
-    }
-
-    .aboutImg {
-        height: 250px;
-    }
-
-    .aboutImg img {
-        height: 250px;
-    }
-
-    .aboutRgt {
-        justify-content: space-around;
-    }
-
-
 
 
 }
 
-@media (min-width:1441px) and (max-width:2560px){
+
+
+/* @media (min-width:1441px) and (max-width:2560px){
     .navHead img {
         width: 130px;
         height: 130px;
@@ -557,7 +558,6 @@
         gap: 35px;
     }
 
-    /* ..................about................... */
 
 
     .aboutContent {
@@ -604,4 +604,17 @@
         line-height: 40px;
     }
 
+} */
+
+
+@media (max-width: 425px) {
+    .intro{
+        width: 80%;
+        height: auto;
+        width: auto;
+    }
+
+    .introImg{
+        margin: 25px 0;
+    }
 }
