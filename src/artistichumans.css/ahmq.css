@@ -100,12 +100,94 @@
          transition: 0.5s ease-in-out;
     }
 
-
     .vr {
         height: 1px;
     width: 80%;
     background-color: #707070;
     }
+
+    /* ............................intro.................. */
+
+    .intro {
+        width: 280px;
+        height: 550px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .closeImg img {
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        text-underline-offset: 5px;
+    }
+
+    .introImg {
+        width: 280px;
+        height: 160px;
+    }
+
+    .introImg img {
+        width: 280px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    .intro h3 {
+        letter-spacing: 3px;
+        font-size: 1rem;
+    }
+
+    .intro p {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 18px;
+    }
+
+    /* ...................about.................... */
+
+
+    .introMain {
+        height: max-content;
+    }
+
+    .aboutLeft {
+        height: 330px;
+        /* align-items: center; */
+    }
+
+    .aboutContent {
+        display: block;
+    }
+
+    .about{
+        height: max-content;
+        margin: 10px 0;
+    }
+
+    /* ................work.................... */
+
+    .workLeft {
+        height: 600px;
+        width: 100%;
+        /* align-items: center; */
+    }
+
+    .workRgt {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .intro h3 {
+        padding: 15px 0;
+    }
+
+
 
 
 
@@ -149,6 +231,142 @@
         height: 105vh;
     } */
 
+    .intro {
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .closeImg img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .intro h2 {
+        letter-spacing: 5px;
+        text-underline-offset: 5px;
+        font-size: 1.4rem;
+    }
+
+    .introImg {
+        width: 400px;
+        height: 200px;
+    }
+
+    .introImg img {
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .intro h3 {
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    /* ...................about.................... */
+
+
+    .introMain {
+        height: max-content;
+    }
+
+    .aboutLeft {
+        height: 350px;
+        /* align-items: center; */
+    }
+
+    .aboutContent {
+        display: block;
+    }
+
+    .about{
+        height: max-content;
+        margin: 10px 0;
+    }
+
+    /* .....................work.......................... */
+
+    .aboutLeft {
+        height: 600px;
+        /* align-items: center; */
+    }
+
+    .intro {
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .closeImg img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .intro h2 {
+        letter-spacing: 5px;
+        text-underline-offset: 5px;
+        font-size: 1.4rem;
+    }
+
+    .introImg {
+        width: 400px;
+        height: 200px;
+    }
+
+    .introImg img {
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .intro h3 {
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    /* ...................about.................... */
+
+
+    .introMain {
+        height: max-content;
+    }
+
+    .aboutLeft {
+        height: 350px;
+        /* align-items: center; */
+    }
+
+    .aboutContent {
+        display: block;
+    }
+
+    .about{
+        height: max-content;
+        margin: 10px 0;
+    }
+
+    /* .....................work.......................... */
+
+    .aboutLeft {
+        height: 600px;
+        /* align-items: center; */
+    }
+
 }
 
 @media (min-width:769px) and (max-width:1024px){
@@ -179,6 +397,93 @@
         width: 27px;
         height: 25px;
         cursor: pointer;
+    }
+
+    .intro {
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .closeImg img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .intro h2 {
+        letter-spacing: 5px;
+        text-underline-offset: 5px;
+        font-size: 1.4rem;
+    }
+
+    .introImg {
+        width: 400px;
+        height: 200px;
+    }
+
+    .introImg img {
+        width: 400px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .intro h3 {
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+
+    /* ..................about.................... */
+
+
+
+    .about {
+        width: 900px;
+        height: 500px;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .aboutLeft {
+        height: 450px;
+        /* align-items: center; */
+    }
+
+    .aboutImg {
+        height: 250px;
+    }
+
+    .aboutImg img {
+        height: 250px;
+    }
+
+    .aboutRgt {
+        justify-content: space-around;
+    }
+
+    /* ................work.................. */
+
+    .about {
+        width: 900px;
+        height: 520px;
+        padding: 20px;
+    }
+
+    .workLeft {
+        height: 500px;
+        /* align-items: center; */
+    }
+
+    .work p {
+        font-size: 0.7rem;
+        padding: 5px 0;
     }
 
 }
@@ -251,6 +556,52 @@
 
     .navTail{
         gap: 35px;
+    }
+
+
+
+    .aboutContent {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .aboutLeft {
+        width: 50%;
+        height: 850px;
+    }
+
+    .aboutRgt {
+        width: 50%;
+    }
+
+    .closeImg img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about h2 {
+        font-size: 3.5rem;
+        text-underline-offset: 10px;
+    }
+
+    .aboutImg {
+        height: 500px;
+        width: 900px;
+    }
+
+    .aboutImg img {
+        width: 900px;
+        height: 500px;
+    }
+
+    .about h3 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .intro p {
+        font-size: 1.7rem;
+        line-height: 40px;
     }
 
 } */
