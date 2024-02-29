@@ -49,6 +49,11 @@
     backdrop-filter: blur(5px);
 }
 
+.nvcp{
+    display: flex;
+    gap: 20px;
+}
+
 .nContent a{
     font-weight: normal;
     font-family: "Montserrat", sans-serif;
@@ -76,6 +81,8 @@
     width: 1px;
     background-color: #707070;
 }
+
+
 
 .nInsta{
     border: 1px solid #707070;

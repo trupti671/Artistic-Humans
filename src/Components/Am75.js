@@ -44,9 +44,9 @@ function Am75() {
     <div className="introMain">
     <div className="intro about work am75">
     <Link to={'/'} className="closeImg"><img src={close} alt="" /></Link>
+            <h2>AMRIT MAHOTSAV 75×75×75</h2>
         <div className="aboutContent workContent am75Content">
         <div className="aboutLeft workLeft am75Left">
-            <h2>AMRIT MAHOTSAV 75×75×75</h2>
         <div className="introImg workImg am75Img"><img src={am75} alt="" /></div>
         <div className="t75"><div className="typing">75 {text}</div></div>
         <p>As India marks 75 years of Independence and celebrates Azadi Ka Amrit Mahotsav, our project <strong>Amrit Mahotsav - 75 x 75 x 75</strong> aims to celebrate the spirit of freedom and the people who fought for our independence, bringing theatre creators on one platform across geographies. We will stage the play 'Azad Hind Ki Chi Gatha' (The story of Independent India) across 75 locations, with 75 shows with 75 college/institutions. Students of the same college with prepare and present the play within their own college auditorium in Hindi-Marathi.</p>

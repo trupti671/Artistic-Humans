@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 import menuicon from '../Images/menuicon.png';
 
 function Navbar() {
-  const [navStyle, setNavStyle] = useState({
-    transform: 'translateX(0)'
-  });
+  const [navStyle, setNavStyle] = useState({});
   const [menu, setMenu] = useState(true);
   const [nvs, setNvs] = useState({
     marginRight: 'auto'
@@ -16,9 +14,9 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 550) {
         setNavStyle({
-          transform: 'translateX(0px)'
+          transform: 'translateX(-400px)'
         });
       }
     };
@@ -36,7 +34,7 @@ function Navbar() {
   const handleClick = () => {
     if (menu) {
       setNavStyle({
-        transform: 'translateX(-155px)'
+        transform: 'translateX(-95px)'
       });
       setNvs({
         marginRight: '0'
@@ -65,6 +63,7 @@ function Navbar() {
             <div className="nInsta"><img src={instawhite} alt="" /></div>
             <Link to={'/contact'}><button>CONTACT US</button></Link>
           </div>
+          <div className="nvcp">
           <div className="nContent nc2" style={navStyle}>
             <Link to={'/intro'}>INTRO</Link>
             <div className="vr"></div>
@@ -78,15 +77,15 @@ function Navbar() {
             <div className="vr"></div>
             <Link to={'/showcase'}>SHOWCASE</Link>
           </div>
-         
           <div className="nmenuContent">
             <img className='nmenu' src={menuicon} alt="menuicon" onClick={handleClick}/>
           
             <div className="nContent">
               <Link to={'/ourplays'}>OUR PLAYS</Link>
-              <div className="vr"></div>
+              <div className="vr opvr"></div>
               <Link>NOW PLAYING</Link>
             </div>
+          </div>
           </div>
         </div>
       </div>

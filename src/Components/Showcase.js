@@ -23,11 +23,24 @@ function Showcase() {
     const [slide, setSlide] = useState({
         transform: "translateX(0px)",
       });
+
+      const [sdp, setSdp] = useState()
+
+      useEffect(() => {
+        if(window.innerWidth <= 550)
+        {
+          setSdp(300)
+        }else if(window.innerWidth > 550 && window.innerWidth <= 1024){
+          setSdp(400)
+        }else{
+          setSdp(600)
+        }
+      }, [])
     
       const [n, setN] = useState(1);
     
       const left = () => {
-        const trs = n === 1 ? 0 : (n - 2) * -600;
+        const trs = n === 1 ? 0 : (n - 2) * -sdp;
         setN(n === 1 ? 1 : n - 1);
     
         setSlide({
@@ -36,7 +49,7 @@ function Showcase() {
       };
     
       const right = () => {
-        const trs = n === 12 ? (12 - 1) * -600 : n * -600;
+        const trs = n === 12 ? (12 - 1) * -sdp : n * -sdp;
         setN(n === 12 ? 12 : n + 1);
     
         setSlide({
